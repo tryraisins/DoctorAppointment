@@ -159,38 +159,3 @@ def set_doctor_availability(doctor_id: int, is_available: bool):
     return {"message": "Doctor availability updated"}
 
 
-
-patient1 = Patient(
-    id=1,
-    name="Seun",
-    age=23,
-    sex="Male",
-    weight=70.5,
-    height=175.0,
-    phone="09090891242"
-)
-patient2 = Patient(
-    id=2,
-    name="Sayo",
-    age=25,
-    sex="Male",
-    weight=80.5,
-    height=185.0,
-    phone="08178230456"
-)
-doctor1 = Doctor(
-    id=1,
-    name="Ibrahim Smith",
-    specialization="Surgeon",
-    phone="090923457"
-)
-doctor2 = Doctor(
-    id=2,
-    name="Tola Hafeez",
-    specialization="Dentist",
-    phone="08178260549"
-)
-patients_data[patient1.id] = patient1
-patients_data[patient2.id] = patient2
-doctors_data[doctor1.id] = doctor1
-doctors_data[doctor2.id] = doctor2

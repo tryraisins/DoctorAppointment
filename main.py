@@ -9,7 +9,7 @@ class Patient(BaseModel):
     sex: str
     weight: float
     height: float
-    phone: str
+    phone: str 
 
 class Doctor(BaseModel):
     id: int
@@ -156,6 +156,6 @@ def set_doctor_availability(doctor_id: int, is_available: bool):
     if doctor_id not in doctors_data:
         raise HTTPException(status_code=404, detail=f"No Doctor with id, {doctor_id}, was found")
     doctors_data[doctor_id].is_available = is_available
-    return {"message": "Doctor availability updated"}
+    return {"message": "Doctor availability updated "}
 
 
